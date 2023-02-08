@@ -19,7 +19,13 @@
         "scope": "jsurapong.jui",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "jui/ui/button-label"
+        "rootDir": "jui/ui/button-label",
+        "nextVersion": {
+            "version": "patch",
+            "message": "my message",
+            "username": "jsurapong",
+            "email": "surapong.kawkangploo@gmail.com"
+        }
     },
     "$schema-version": "15.0.0"
 }
