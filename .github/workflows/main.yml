@@ -19,6 +19,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - name: init bit.cloud
+        run: |
+          echo "Adding bit.cloud to npm registry"
+          npm config set @<owner>:registry=https://node.bit.cloud
+          npm config set @teambit:registry=https://node.bit.cloud
+          npm config set //node.bit.cloud/:_authToken ${BIT_TOKEN}
+          echo "Completed adding bit.cloud to npm registry"
+        env:
+          BIT_TOKEN: ${{ secrets.BIT_TOKEN }}
       - name: Install Bit Version Manager
         run: npm i -g @teambit/bvm
       - name: Install latest Bit version
