@@ -29,7 +29,6 @@ jobs:
         run: |
           bit config set analytics_reporting false
           bit config set anonymous_reporting false
-          cat $BIT_TOKEN
           bit config set user.token $BIT_TOKEN
       - name: Install packages using bit
         run: bit install
