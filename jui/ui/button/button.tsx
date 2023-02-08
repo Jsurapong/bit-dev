@@ -1,16 +1,12 @@
 import React, { ReactNode } from 'react';
 
-export type ToDoProps = {
+export type ButtonProps = {
   /**
    * a node to be rendered in the special component.
    */
   children?: ReactNode;
 };
 
-export function ToDo({ children }: ToDoProps) {
-  return (
-    <div>
-      {children}
-    </div>
-  );
+export function Button({ children }: ButtonProps) {
+  return <button>{children}</button>;
 }
