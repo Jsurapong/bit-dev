@@ -8,5 +8,5 @@ export type ButtonProps = {
 };
 
 export function Button({ children }: ButtonProps) {
-  return <button>{children}</button>;
+  return <button style={{ color: 'red' }}>{children}</button>;
 }
