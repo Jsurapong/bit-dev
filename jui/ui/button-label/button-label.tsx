@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { Button } from '@jsurapong/jui.ui.button';
 
 export type ButtonLabelProps = {
   /**
@@ -9,8 +10,8 @@ export type ButtonLabelProps = {
 
 export function ButtonLabel({ children }: ButtonLabelProps) {
   return (
-    <div>
-      {children}
-    </div>
+    <>
+      Label : <Button>{children}</Button>
+    </>
   );
 }
