@@ -11,7 +11,7 @@ export type ButtonLabelProps = {
 export function ButtonLabel({ children }: ButtonLabelProps) {
   return (
     <>
-      Label : <Button>{children}</Button> : Label
+      Label : <Button>{children}</Button> : Label hello
     </>
   );
 }
